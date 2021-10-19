@@ -4,9 +4,167 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Faculdade Viver</title>
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
-  
+  <header class="container-fluid">
+    <div id="carousel" class="carousel slid<e" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          
+          <img src="img/Logotipo-Inicial-Cursiva-Elegante-3-opções-_1_.gif" class="d-block w-100" alt="tecnologiadeponta" style="height: 650px; width:200px; align-items: center;"
+            <h1 class="escrita-mao mb-5" style="font-size: 8em; color:rgb(238, 238, 245)"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(48, 34, 240);">
+    <div class="container-fluid" style="background: rgb(236, 236, 241);">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quemsomos">Quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#controleacademico">Controle Acadêmico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cadastro">Cadastro</a>
+          </li>
+        </ul>
+        <form class="d-flex" action="cadastro.html">
+          <button class="btn btn-outline-dark" type="submit">Cadastre-se</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid">
+    <section id="quemsomos" class="row justify-content-center text-center text-black">
+      <h2 class="display-3 pt-4">
+        Quem somos
+      </h2>
+      <small><em></em></small>
+      <div class="mt-5 col-8 align-self-center flex" style="background: rgb(129, 120, 192)">
+        <h4 class="p-5">
+          Somos uma faculdade com visão de terceiro mundo que buscamos profissionais para compor nosso time de alto padrão no Brasil.
+        </h4>
+      </div>
+      <div>
+        <br id="cadastro">
+        <a href="cadastro.html" class="btn btn-light btn-lg m-5" style="background: rgb(129, 119, 218);">Cadastre-se</a>
+      </div>
+    </section>
+    <section class="row justify-content-center text-center mb-5" style="background: rgb(129, 117, 221);">
+      <h2 class="display-3 pt-4 text-light">Controle Acadêmico</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/tecnologia.jpg" class="card-img-top" width="500"
+              alt="Disciplinas">
+            <div class="card-body">
+              <h5 class="card-title">PERFIL</h5>
+              <p class="card-text">
+                Encontre todas as turmas que irá ministrar suas aulas...
+               </div>
+               <a href="cadastro.html" class="btn btn-warning" style="background:rgb(100, 100, 216);">Entrar</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/tecnologia_2.jpg" class="card-img-top" width="500" alt="Alunos">
+            <div class="card-body">
+              <h5 class="card-title"> Turmas/Cursos</h5>
+              <p class="card-text">
+                Vizualize todo histórico Acadêmico de seus alunos e controle de turmas.
+              </p>
+             </div>
+             <a href="cadastro.html" class="btn btn-warning" style="background:rgb(100, 100, 216);">Vizualizar</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/professor.jpg" class="card-img-top" width="500"
+              alt="ciber seruguraça">
+            <div class="card-body">
+              <h5 class="card-title">Política do <i>CAMPUS</i></h5>
+              <p class="card-text">Fique por dentro da proteção de seus dados e seruguraça cibernetíca.</p>
+              </div>
+              <a href="cadastro.html" class="btn btn-warning" style="background: rgb(100, 100, 216);">Vizualizar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="row justify-content-center bg-light">
+      <h2 class="display-3 mt-4 text-center text-white" style="background:rgb(100, 100, 216);">Contato</h2>
+      <div class="row row-cols-1 row-cols-md-2" id="contato">
+        <div class="col-lg-4 float-start"></div>
+          
+        </div>
+        <div class="col-lg-8 float-end">
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input class="form-control" type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Telefone</label>
+                    <input class="form-control" type="tel" placeholder="Telefone com DDD" id="tel" name="tel" required>
+                </div>
+                <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input class="form-control" type="text" placeholder="Digite seu Email" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-outline-primary btn-lg mb-5" style type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+  </main>
+    
+  <footer class="container-fluid">
+    <div class="row text-dark pt-5 pb-5 m-auto" style="background:rgb(144, 136, 219);">
+      <div class="col-lg-4 col-sm-12">
+        <h4>Faculdade Viver Bem</h4>
+        <small><em>Faça a melhor escolha sempre</em></small>
+        <ul class="list-group list-group-flush text-dark">
+          <li class="list-group-item"><a href="quemsomos" class="text-decoration-none" style="font-size: 20px;">Quem Somos</a></li>
+          <li class="list-group-item"><a href="controle.html" class="text-decoration-none"style="font-size: 20px;">Controle Acadêmico</a></li>
+          <li class="list-group-item"><a href="cadastro.html" class="text-decoration-none"style="font-size: 20px;">Cadastro</a></li>
+          <li class="list-group-item"><a href="#" class="text-decoration-none"style="font-size: 20px;">Login</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <p class="pt-5" style="text-align: justify;">As aulas são aplicadas através de uma plataforma simples e completa, web-aulas e material didático digital, feitos para uma aprendizagem dinâmica e acessível em ambiente virtual. Esse é um diferencial para o aluno que busca flexibilidade para montar seus próprios horários e conciliar os estudos a sua rotina.
+        </p>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <p class="pt-5" style="text-align: justify;">Ministre e prepare o material didático das aulas de Informática conforme orientação e conteúdo previamente distribuído, aplica provas, desenvolve trabalhos em aula e esclarece dúvidas..
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div class="text-center p-1" style="background: rgb(207, 206, 231);">
+    <h6 class="small">Faculdade Viver Bem&copy; 2021 |&deg;</h6>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
 </body>
 </html>
